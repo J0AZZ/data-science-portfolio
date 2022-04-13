@@ -1,0 +1,49 @@
+CHAPTER (1)
+    [+] PARCIAIS são as frequências dominantes de um som, sendo a menor parcial chamada FUNDAMENTAL. Múltiplos
+	da frequência fundamental são classificados como HARMÔNICOS.
+
+    [+] A composição do som por suas parciais pode ser visualizada através de um ESPECTROGRAMA, que representa
+	um as intensidades de frequências que ocorrem ao longo do tempo de duração deste som.
+
+    [+] Toda música pode ser representada, em formato de áudio, por combinações	de atributos elementares do som, 
+	como TOM, VOLUME, DURAÇÃO e TIMBRE. 
+
+    [+] A FASE DE ATAQUE (um aumento súbito e intenso de energia no início da onda) é uma perturbação composta por 
+	elementos não-periódicos, que se dispersam ao longo da onda sonora e é quando um som é construído.
+	A acústica trata a atenuação deste ruído como fase de TRANSIENTE, que pode ser melhor compreendida ao 
+	perceber que até o estímulo de um músico (ao tocar uma tecla do piano, por exemplo) seja convertido 
+	pelos diversos mecanismos internos ao instrumento em um som, as perturbações mecânicas provocadas ao longo 
+	desse processo são transmitidas às ondas sonoras intencionais, provocando o referido ruído. 
+	A fase de DECAIMENTO trata-se da fase de estabilização da onda, com elementos que apresentam aproximadamente
+	padrões periódicos. A fase de LIBERAÇÃO ocorre quando o estímulo musical desaparece.
+        ADSR: Attack, Decay, Sustain, Release
+
+    [+] O timbre não é um elemento unidimensional, pois representa particularidades que abstraímos ao distinguir
+	o som de dois instrumentos. Por ser um fenômeno multidimensional, sua medição mostra-se uma tarefa difícil.
+
+
+CHAPTER (2)
+    [+] Extrair informações significativas de um trecho musical é uma tarefa que exige uma decomposição da forma de 
+	onda em componentes periódicos; utilizamos ANÁLISE DE FOURIER para extrair as ondas sinusoidais que compõem
+	um som, analogamente a um prisma que revela os componentes de uma onda luminosa.
+
+    [+] A ideia central da TRANSFORMADA DE FOURIER consiste em comparar uma onda sonora com diversas ondas sinusoidais
+	das frequências que compõem a onda e obter um coeficiente de magnitude e um coeficiente de fase para cada 
+	frequência. A frequência cujo coeficiente de magnitude for maior será a FREQUÊNCIA CENTRAL da onda, através 
+	da qual podemos obter o tom aproximado deste estímulo sonoro.
+    
+    [+] A onda original pode ser reconstruída a partir das frequências proporcionais às respectivas magnitudes e 
+	deslocadas segundo os coeficientes de fase. Esta reconstrução é chamada REPRESENTAÇÃO DE FOURIER.
+
+    [+] Quando comparamos uma onda sonora com uma onda protótipo podemos deslocar a sinusóide componente através do 
+	valor FASE, e dessa forma utilizamos o fator de fase que nos dá o maior grau de similaridade com a onda real.
+
+    [+] A comparação de duas ondas pode dar-se por meio do cálculo de integrais. Se as funções de duas ondas assumem
+	valores de mesma magnitude ao longo do tempo, a integral do produto destas duas funções vai tender a ser grande,
+	ao passo que comportamentos muito distintos ao longo do tempo (um valor positivo e outro negativo) então a 
+	integral do produto destas duas funções vai tender a um valor pequeno. Desta forma, dados f e g funções reais,
+	temos uma medida de similaridade entre f e g dada por INTEGRAL(f(t) * g(t)) .
+
+    [+] Como uma breve introdução à transformada de fourier, temos que esta nos dá uma coleção dos valores grau de 
+	similaridade e deslocamento necessário para que haja a maior semelhança entre ondas, para uma dada frequência.
+

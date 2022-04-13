@@ -1,0 +1,23 @@
+AIr - Artificial Intelligent Ear
+    solução proposta
+
+CHORD DETECTION CHALLENGE, from Moises Inc.
+    dados uma música e sua respectiva cifra, o sistema deve ser capaz de retornar, em formato JSON, 
+    um conjunto de tuplas no formato {(Acorde, Início, Fim)}, isto é, deve ser capaz de determinar
+    quando começa e quando termina cada acorde em uma música.
+    AIr será disponibilizado como um módulo Python, podendo ser utilizado por APIs em aplicações Web, 
+    para conveniência e usabilidade da solução pela Moises Inc.
+
+         entrada         processamento       saída
+    (música + cifra) ----->  (AIr)  -------> (JSON:
+                                              acordes, 
+                                              momentos)
+
+METAS:
+    dd/mm/aaaa  (responsável) meta
+
+ENTREGA:
+    28/05/2021 Data final para entrega
+
+
+

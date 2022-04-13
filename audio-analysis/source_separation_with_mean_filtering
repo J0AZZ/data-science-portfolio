@@ -1,0 +1,26 @@
+MEDIAN FILTERING METHOD
+	source: http://dafx10.iem.at/papers/DerryFitzGerald_DAFx10_P15.pdf
+
+	reverse 
+	pipeline: We get two spectrograms (harm/perc) by applying two different masks to the original spectrogram.
+		  To get the masks we apply two median filterings to the mixed spectrogram, each one with its own 
+		  neighborhood length, defined as (l).
+
+	median 
+	filter:	  Percussion/Harmonic enhanced spectrograms can be obtained by substituting each spectrogram bin
+		  by the median of its (l) neighbors. If (l) is even, each bin is substituted by the mean of the two
+		  middle elements.
+
+	harmonic/percussive
+	enhancement: The only element that changes the enhancement to more harmonic or more percussive is (l), thus
+		  the neighborhood defines a continuity restriction in such a way that we need to experiment some
+		  different values for both enhancement modalities.
+
+	masks:	  Hard masks (conditional greater than that returns 1 or 0);
+		  Soft masks (well defined value based on Wiener filtering)
+
+	once we get the masks, we can generate two spectrograms, one from each mask, only by performing element-wise
+	multiplication between each mask and the original spectrogram.
+		  
+	
+	
